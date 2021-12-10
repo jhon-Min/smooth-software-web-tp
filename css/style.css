@@ -1,0 +1,49 @@
+/* ============ global utili ============ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ============ Navigaiton ============ */
+.custom-header {
+  position: relative;
+  background-color: #edf3ff;
+}
+
+.navbar {
+  background-color: #edf3ff;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.active {
+  color: #0d6efd !important;
+}
+
+/* ============ Hero ============ */
+.hero {
+  background-color: #edf3ff;
+  min-height: 100vh;
+}
+
+.hero-status p {
+  font-size: 18px;
+}

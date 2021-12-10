@@ -1,0 +1,25 @@
+/* ============ Navigaiton ============ */
+.custom-header {
+  position: relative;
+  background-color: $semi-dark;
+}
+
+.navbar {
+  background-color: $semi-dark;
+   font-weight: bold;
+}
+
+.nav-link {
+  font-weight: bold;
+  transition: 0.5s;
+  color: black !important;
+
+}
+
+.nav-link:hover {
+  color: $primary !important;
+}
+
+.active {
+  color: $primary !important;
+}
