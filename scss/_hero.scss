@@ -4,7 +4,7 @@
   background-position: bottom left;
   background-repeat: no-repeat;
   background-color: #edf3ff;
-  min-height: 160vh;
+  min-height: 165vh;
   background-size: contain;
 }
 
@@ -36,14 +36,14 @@
 
 .hero-img-2{
   position: absolute;
-  top: -200px;
+  top: -130px;
   left: 68px;
 }
 
 .hero-img-1{
   position: absolute;
   left: 22% !important;
-  top: -27px;
+  top: 35px;
 }
 
 .home-first-sec{
@@ -103,4 +103,88 @@
         font-size: 20px;
         color: #555;
       }
+}
+
+@media only screen and (max-width: 770px) {
+  /*Tablets [601px -> 1200px]*/
+  .header-img-1{
+    display: none;
+  }
+
+  .hero{
+    min-height: 115vh;
+
+    .hero-img-1, .hero-img-2{
+      left: 0 !important;
+      right: 0;
+      margin: auto;
+      top: 0;
+    }
+
+    .hero-img-1{
+      bottom: -100px;
+    }
+
+    .hero-img-2{
+      bottom: 150px;
+      z-index: 1;
+    }
+  }
+
+  .home-third-sec{
+    padding: 50px 0;
+
+    .home-third-card{
+    .home-third-img{
+      width: 32px !important;
+    }
+
+    h5{
+      font-size: 15px;
+    }
+
+    p{
+      font-size: 12px;
+    }
+
+    a{
+      font-size: 13px;
+    }
+  }
+  }
+
+  .footer{
+    padding-top: 50px;
+
+      .footer-divider{
+        margin-top: 25px;
+      }
+  }
+  
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+}
+
+/* Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
 }

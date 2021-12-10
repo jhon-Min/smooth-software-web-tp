@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     let current = $(this).scrollTop();
-    console.log(current);
+
     if (current > screenHeight - 300) {
       $(".navbar").addClass("site-nav");
     } else {

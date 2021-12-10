@@ -16,6 +16,14 @@
   margin-top: 80px;
 }
 
+.pt-7 {
+  padding-top: 70px;
+}
+
+z-1 {
+  z-index: 1 !important;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -36,6 +44,10 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: black !important;
+}
+
+.normal-nav {
+  position: absolute;
 }
 
 .site-nav {
@@ -94,7 +106,7 @@
   background-position: bottom left;
   background-repeat: no-repeat;
   background-color: #edf3ff;
-  min-height: 160vh;
+  min-height: 165vh;
   background-size: contain;
 }
 
@@ -122,14 +134,14 @@
 
 .hero-img-2 {
   position: absolute;
-  top: -200px;
+  top: -130px;
   left: 68px;
 }
 
 .hero-img-1 {
   position: absolute;
   left: 22% !important;
-  top: -27px;
+  top: 35px;
 }
 
 .home-first-sec {
@@ -188,3 +200,54 @@
   font-size: 20px;
   color: #555;
 }
+
+@media only screen and (max-width: 770px) {
+  /*Tablets [601px -> 1200px]*/
+  .header-img-1 {
+    display: none;
+  }
+
+  .hero {
+    min-height: 115vh;
+  }
+  .hero .hero-img-1, .hero .hero-img-2 {
+    left: 0 !important;
+    right: 0;
+    margin: auto;
+    top: 0;
+  }
+  .hero .hero-img-1 {
+    bottom: -100px;
+  }
+  .hero .hero-img-2 {
+    bottom: 150px;
+    z-index: 1;
+  }
+
+  .home-third-sec {
+    padding: 50px 0;
+  }
+  .home-third-sec .home-third-card .home-third-img {
+    width: 32px !important;
+  }
+  .home-third-sec .home-third-card h5 {
+    font-size: 15px;
+  }
+  .home-third-sec .home-third-card p {
+    font-size: 12px;
+  }
+  .home-third-sec .home-third-card a {
+    font-size: 13px;
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+  .footer .footer-divider {
+    margin-top: 25px;
+  }
+}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
