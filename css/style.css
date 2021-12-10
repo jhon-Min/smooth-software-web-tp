@@ -8,6 +8,14 @@
   letter-spacing: 2px;
 }
 
+.mt-7 {
+  margin-top: 70px;
+}
+
+.mt-8 {
+  margin-top: 80px;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -30,6 +38,38 @@
   color: black !important;
 }
 
+.site-nav {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  -webkit-animation: toShow 1s linear;
+          animation: toShow 1s linear;
+  background-color: white;
+}
+
+@-webkit-keyframes toShow {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes toShow {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .nav-link:hover {
   color: #0d6efd !important;
 }
@@ -38,12 +78,113 @@
   color: #0d6efd !important;
 }
 
+.navbar-nav {
+  z-index: 1;
+}
+
+.header-img-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /* ============ Hero ============ */
 .hero {
+  background-image: url("../img/masthead-watter-bg.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
   background-color: #edf3ff;
-  min-height: 100vh;
+  min-height: 160vh;
+  background-size: contain;
 }
 
 .hero-status p {
   font-size: 18px;
+}
+
+.btn-video, .btn-download {
+  border-radius: 50px;
+  padding: 15px 40px;
+}
+
+.btn-video {
+  background-color: #f26822;
+  color: white;
+}
+.btn-video:hover {
+  color: white;
+  background: #c74e11;
+}
+
+.hero-img-box {
+  position: relative;
+}
+
+.hero-img-2 {
+  position: absolute;
+  top: -200px;
+  left: 68px;
+}
+
+.hero-img-1 {
+  position: absolute;
+  left: 22% !important;
+  top: -27px;
+}
+
+.home-first-sec {
+  padding-bottom: 80px;
+}
+.home-first-sec .home-start-img-1 {
+  width: 60px;
+}
+.home-first-sec .home-start-content p {
+  font-size: 15px;
+}
+
+.home-second-sec {
+  padding-bottom: 80px;
+}
+.home-second-sec .btn-learn {
+  border-radius: 30px;
+  padding: 12px 25px;
+}
+
+.home-third-sec {
+  background: url("../img/cta-bg.png") center center no-repeat #403595;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+.home-third-sec .home-third-card {
+  border: 0;
+}
+.home-third-sec .home-third-card .home-third-img {
+  width: 70px;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.footer .icon a {
+  text-decoration: none !important;
+  background-color: #edf3ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer .icon a i {
+  font-size: 20px;
+  color: #555;
 }

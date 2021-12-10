@@ -1,25 +1,53 @@
 /* ============ Navigaiton ============ */
 .custom-header {
-  position: relative;
-  background-color: $semi-dark;
+    position: relative;
+    background-color: $semi-dark;
 }
 
 .navbar {
-  background-color: $semi-dark;
-   font-weight: bold;
+    background-color: $semi-dark;
+    font-weight: bold;
 }
 
 .nav-link {
-  font-weight: bold;
-  transition: 0.5s;
-  color: black !important;
+    font-weight: bold;
+    transition: 0.5s;
+    color: black !important;
 
+}
+
+.site-nav {
+  z-index: 1000;  
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  animation: toShow 1s linear;
+  background-color: white;
+}
+
+@keyframes toShow {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .nav-link:hover {
-  color: $primary !important;
+    color: $primary !important;
 }
 
 .active {
-  color: $primary !important;
+    color: $primary !important;
+}
+
+.navbar-nav{
+    z-index: 1;
+}
+
+.header-img-1{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
