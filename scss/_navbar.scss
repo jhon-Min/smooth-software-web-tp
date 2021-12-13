@@ -56,6 +56,12 @@
     right: 0;
 }
 
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+ /* your css rules for ipad landscape */
+  
+}
+
 /* ----------- iPad Pro ----------- */
 /* Portrait */
 @media only screen 
