@@ -25,6 +25,18 @@ z-1{
   z-index: 1 !important;
 }
 
+.ani-delay-1 {
+  animation-delay: 0.5s;
+}
+
+.ani-delay-2 {
+  animation-delay: 1s;
+}
+
+.ani-delay-3 {
+  animation-delay: 1.5s;
+}
+
 $primary: #0d6efd;
 $semi-dark: #edf3ff;
 $primary-font:'Montserrat', sans-serif;

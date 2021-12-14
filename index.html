@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/feather-icons/feather.css">
+    <link rel="stylesheet" href="vendor/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,10 +22,10 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="z-index: 1;">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="feather-menu p-1 text-secondary menu-icon"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse hello" id="navbarNav">
+                    <ul class="navbar-nav ms-auto custom-list">
                         <li class="nav-item me-3">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -45,7 +46,7 @@
             </div>
         </nav>
 
-        <img src="img/masthead-overlay.png" alt="" class="header-img-1">
+        <img src="img/masthead-overlay.png" alt="" class="header-img-1 wow animate__animated animate__fadeIn ani-delay-1">
     </div>
 
     <!-- Hero -->
@@ -53,7 +54,7 @@
         <div class="container">
             <div class="row d-lg-flex align-items-lg-center  min-vh-100 custom-home-vh">
                 <div class="col-12 col-lg-6 hero-status pt-7 mt-5 mt-lg-0">
-                   <div>
+                   <div class="wow animate__animated animate__fadeInLeft">
                         <h1 class="ls-1 fw-bolder d-none d-lg-block">Start Build Amazing <br> Marketing Product</h1>
                         <h2 class="ls-1 fw-bolder text-center d-block d-lg-none">Start Build Amazing Marketing Product</h2>
                         <p class="ls-1 fw-light text-center mt-3 text-lg-start">Build complete awesome marketing website with amazing
@@ -74,19 +75,23 @@
                 </div>
 
                 <div class="col-12 col-lg-6">
-                    <div class="hero-img-box">
+                    <div class="hero-img-box wow animate__animated animate__fadeIn">
                         <img src="img/masthead-icon.png" alt="" class="hero-img-2">
                         <img src="img/businessman-meditating.png" alt="" class="hero-img-1"> 
                     </div>
                 </div>
             </div>
         </div>
+
+        <a href="#" class="scroll-to-top shadow bg-primary text-white text-decoration-none d-none" id="toTop">
+            <i class="feather-chevrons-up"></i> 
+        </a>
     </div>
 
     <!--Home Content Section -->
     <section>
         <!-- First Section -->
-        <div class="home-first-sec">
+        <div class="home-first-sec wow animate__animated animate__fadeIn ani-delay-1">
             <div class="container">
                 <div class="text-center g-title">
                     <h2 class="fw-bold mb-4 d-none d-lg-block">We are build awesome <br> marketing template</h2>
@@ -205,16 +210,16 @@
         <!-- Second Section -->
         <div class="home-second-sec">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center wow animate__animated animate__fadeIn">
                     <img src="img/section-divider-bg-right.png" alt="" class="img-divider">
                 </div>
 
                 <div class="row mt-7 align-items-center">
                     <div class="col-12 col-lg-8">
-                        <img src="img/using-software.png" alt="" class="img-fluid">
+                        <img src="img/using-software.png" alt="" class="img-fluid wow animate__animated animate__fadeInLeft ani-delay-1">
                     </div>
 
-                    <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                    <div class="col-12 col-lg-4 mt-4 mt-lg-0 wow animate__animated animate__fadeIn">
                         <h3 class="fw-bolder">About Smoot Template</h3>
                         <p class="ls-1 mt-3 small">Et odio honestatis ius. Exerci numquam consequuntur no mei. Ut sed ornatus tibique, fabellas pertinax est cu. Te odio
                         omittam mea, ea tractatos dissentiunt complectitur nec.</p>
@@ -223,11 +228,11 @@
                 </div>
 
                 <div class="text-center mt-5">
-                    <img src="img/section-divider-bg-left.png" alt=""  class="img-divider">
+                    <img src="img/section-divider-bg-left.png" alt=""  class="img-divider wow animate__animated animate__fadeIn">
                 </div>
 
                 <div class="row mt-3 align-items-center">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4 wow animate__animated animate__fadeIn">
                         <h3 class="fw-bolder">Vision and Mission</h3>
                         <p class="ls-1 mt-3 small">Et odio honestatis ius. Exerci numquam consequuntur no mei. Ut sed ornatus tibique,
                             fabellas pertinax est cu. Te odio
@@ -236,15 +241,15 @@
                     </div>
 
                     <div class="col-12 col-lg-8">
-                        <img src="img/businessman-with-laptop.png" alt="" class="img-fluid">
+                        <img src="img/businessman-with-laptop.png" alt="" class="img-fluid mt-4 mt-md-0 wow animate__animated animate__fadeInRight ani-delay-1">
                     </div>
                 </div>
 
                 <div class="text-center mt-4">
-                    <img src="img/section-divider-bg-right.png" alt=""  class="img-divider">
+                    <img src="img/section-divider-bg-right.png" alt=""  class="img-divider wow animate__animated animate__fadeIn">
                 </div>
 
-                <div class="row mt-5 align-items-center">
+                <div class="row mt-5 align-items-center wow animate__animated animate__fadeIn">
                     <div class="col-12 col-lg-8">
                         <img src="img/lady-with-handphone.png" alt="" class="img-fluid">
                     </div>
@@ -262,7 +267,7 @@
 
         <!-- Thire Section -->
         <div class="home-third-sec">
-            <div class="container">
+            <div class="container wow animate__animated animate__fadeIn">
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <div class="card home-third-card">
@@ -319,7 +324,7 @@
         </div>
     </section>
 
-    <div class="footer">
+    <div class="footer wow animate__animated animate__fadeIn">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3 pe-4">
@@ -389,6 +394,10 @@
 
     <script src="vendor/jquery-3.5.1.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/app.js"></script>
 </body>
 </html>

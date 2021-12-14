@@ -50,16 +50,23 @@
     z-index: 1;
 }
 
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+
+.menu-icon{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .header-img-1{
     position: absolute;
     top: 0;
     right: 0;
-}
-
-
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
- /* your css rules for ipad landscape */
-  
 }
 
 /* ----------- iPad Pro ----------- */
@@ -84,5 +91,21 @@
 
   .header-img-1{
     width: 35%;
+  }
+}
+
+@media only screen and(max-width: 770px) {
+  .custom-list{
+    margin-top: 10px;
+
+    li{
+      background-color: white;
+      margin: 10px 0;
+      margin-right: 0px !important;
+      padding: 5px 0px 5px 15px;
+      border-radius: 5px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
   }
 }
