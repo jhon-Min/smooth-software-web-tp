@@ -47,6 +47,7 @@ z-1 {
 .custom-header {
   position: relative;
   background-color: #edf3ff;
+  z-index: 1000;
 }
 
 .navbar {

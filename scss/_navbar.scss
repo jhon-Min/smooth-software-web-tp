@@ -2,6 +2,7 @@
 .custom-header {
     position: relative;
     background-color: $semi-dark;
+    z-index: 1000;
 }
 
 .navbar {
