@@ -222,9 +222,11 @@ z-1 {
   left: -10px;
   -webkit-animation: shakeY 30s infinite;
           animation: shakeY 30s infinite;
+  z-index: 1000;
 }
 
 .hero-img-1 {
+  z-index: 1000;
   position: absolute;
   left: 55px;
   top: 50px;
