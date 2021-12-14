@@ -1,0 +1,49 @@
+/* ============ global utili ============ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.mt-7{
+  margin-top: 70px;
+}
+
+.mt-8{
+  margin-top: 80px;
+}
+
+.pt-7 {
+  padding-top: 70px;
+}
+
+z-1{
+  z-index: 1 !important;
+}
+
+.ani-delay-1 {
+  animation-delay: 0.5s;
+}
+
+.ani-delay-2 {
+  animation-delay: 1s;
+}
+
+.ani-delay-3 {
+  animation-delay: 1.5s;
+}
+
+$primary: #0d6efd;
+$semi-dark: #edf3ff;
+$primary-font:'Montserrat', sans-serif;
+
+*{
+    font-family: $primary-font;
+}
+
+@import './navbar';
+@import './hero';

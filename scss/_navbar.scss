@@ -1,0 +1,111 @@
+/* ============ Navigaiton ============ */
+.custom-header {
+    position: relative;
+    background-color: $semi-dark;
+}
+
+.navbar {
+    background-color: $semi-dark;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-weight: bold;
+    transition: 0.5s;
+    color: black !important;
+
+}
+
+.normal-nav {
+  position: absolute;
+}
+
+.site-nav {
+  z-index: 1000;  
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  animation: toShow 1s linear;
+  background-color: white;
+}
+
+@keyframes toShow {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.nav-link:hover {
+    color: $primary !important;
+}
+
+.active {
+    color: $primary !important;
+}
+
+.navbar-nav{
+    z-index: 1;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+
+.menu-icon{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.header-img-1{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   
+  .header-img-1{
+    width: 35%;
+  }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  .header-img-1{
+    width: 35%;
+  }
+}
+
+@media only screen and(max-width: 770px) {
+  .custom-list{
+    margin-top: 10px;
+
+    li{
+      background-color: white;
+      margin: 10px 0;
+      margin-right: 0px !important;
+      padding: 5px 0px 5px 15px;
+      border-radius: 5px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+  }
+}
