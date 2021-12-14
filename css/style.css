@@ -504,3 +504,110 @@ z-1 {
     margin-top: 35px;
   }
 }
+.price-content-1 {
+  padding-top: 150px;
+  margin-bottom: 350px;
+}
+.price-content-1 .basic, .price-content-1 .premium, .price-content-1 .business {
+  border: none;
+  background-image: url("../img/pricing-bg-default@2x.png");
+  height: 52vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price-content-1 .premium {
+  background-image: url("../img/pricing-bg-blue@2x.png");
+}
+.price-content-1 .business {
+  background-image: url("../img/pricing-bg-orange@2x.png");
+}
+
+.price-card-icon {
+  background-color: #2c2d2d;
+  width: 85px;
+  height: 85px;
+  font-size: 36px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-detail {
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.price-touch {
+  background: url("../img/cta-bg.png") center center no-repeat #403595;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+.price-touch .btn-touch {
+  background-color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 35px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.price-touch .btn-touch:hover {
+  background-color: #edf3ff;
+}
+
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .price-content-1 {
+    margin-bottom: 300px;
+  }
+  .price-content-1 .basic, .price-content-1 .premium, .price-content-1 .business {
+    height: 25vh;
+  }
+}
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .price-content-1 {
+    margin-bottom: 330px;
+  }
+  .price-content-1 .basic, .price-content-1 .premium, .price-content-1 .business {
+    height: 32vh;
+  }
+}
+/* ----------- iPad ----------- */
+/* Portrait and Landscape */
+@media only screen and (max-width: 770px) {
+  .price-content-1 {
+    margin-bottom: 100px;
+  }
+  .price-content-1 .basic, .price-content-1 .premium, .price-content-1 .business {
+    height: 60vh;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+  .basic, .premium, .business {
+    height: 45vh !important;
+  }
+}
+/* ----------- Mobile ----------- */
+@media only screen and (max-width: 425px) {
+  .price-content-1 {
+    margin-bottom: 100px;
+  }
+  .price-content-1 .basic, .price-content-1 .premium, .price-content-1 .business {
+    height: 49vh;
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .basic, .premium, .business {
+    margin-bottom: 260px !important;
+  }
+}
